@@ -7,3 +7,4 @@ If you are not already in a tmux session *zshmux* will ask if you want to attach
 -Clone this repository: `git clone https://github.com/huboles/zshmux`
 
 -Source *zshmux* in your .zshrc: `source <path-to-zshmux>/zshmux/zshmux.zsh`
+
