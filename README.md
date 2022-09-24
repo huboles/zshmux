@@ -4,7 +4,6 @@ If a new shell is launched, *zshmux* quickly checks if there are any tmux sessio
 If you are not already in a tmux session *zshmux* will ask if you want to attach a currently running session, or make a new session in the shell.
 
 ## How to use:
--Clone this repository
-    `git clone https://github.com/huboles/zshmux`
--Source *zshmux* in your .zshrc
-    `source <path-to-zshmux>/zshmux/zshmux.zsh`
+-Clone this repository: `git clone https://github.com/huboles/zshmux`
+
+-Source *zshmux* in your .zshrc: `source <path-to-zshmux>/zshmux/zshmux.zsh`
