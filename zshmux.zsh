@@ -8,12 +8,12 @@ if [[ -z $TMUX ]]; then
         printf '\n\033[34;1mNo \033[33;1mtmux \033[34;1msessions active\n'
     fi
     printf '\033[34;1mAttach session?\033[0;m: [\033[35;1mname\033[0m] \033[37;2m(empty if none)\033[0m: '
-    read sesh
-    if [ -n "$sesh" ]; then
-        if tmux list-sessions | grep -q "$sesh"; then
-            tmux attach-session -t $sesh 
+    read session
+    if [ -n "$session" ]; then
+        if tmux list-sessions | grep -q "$session"; then
+            tmux attach-session -t $session 
         else
-            tmux new-session -s $sesh
+            tmux new-session -s $session
         fi
     fi
 fi
