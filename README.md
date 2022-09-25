@@ -9,4 +9,6 @@ If you are not already in a tmux session *zshmux* will list all currently active
 -Source *zshmux* in your .zshrc: `source <path-to-zshmux>/zshmux/zshmux.zsh`
 
 -Open a new shell
-![zshmux](https://user-images.githubusercontent.com/80217378/192125380-151a4b09-f2ef-4fac-ae34-743cadcc1709.gif)
+
+
+![zshmux](https://user-images.githubusercontent.com/80217378/192126335-82b32c20-a4c7-4f31-803c-485ef43cef28.gif)
