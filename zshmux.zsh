@@ -2,10 +2,10 @@
 
 if [[ -z $TMUX ]]; then
         
-    if tmux list-sessions &> /dev/null ; then
+    if [[ $(tmux list-sessions | wc -l) -ne 0 ]]; then
 
         if [[ $(tmux list-sessions -F"#{?session_attached,,x}" | grep "x" | wc -l) -eq 1 ]]; then
-            tmux attach-session -t $(tmux list-sessions -F"#S")
+            tmux attach-session -t $(tmux list-sessions -F"#{?session_attached,,#S}"  )
             return
         else
             printf '\033[32;1mCurrent \033[33;1mtmux \033[32;1msessions\033[0m:\n'
