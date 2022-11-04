@@ -1,7 +1,6 @@
 #!/bin/zsh
-
-if [[ -z $TMUX ]]; then
-        
+if [[ -z $TMUX ]] && [[ -z $SSH_CLIENT ]]; then
+if         
     if [[ $(tmux list-sessions | wc -l) -ne 0 ]]; then
 
         if [[ $(tmux list-sessions -F"#{?session_attached,,x}" | grep "x" | wc -l) -eq 1 ]]; then
