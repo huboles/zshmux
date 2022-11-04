@@ -5,11 +5,17 @@ If you are not already in a tmux session *zshmux* will list all currently active
 If there is only one tmux session running and not attached to any clients, *zshmux* just automatically attach the session to the current shell.
 
 
-## How to use:
--Clone this repository: `git clone https://github.com/huboles/zshmux`
+## How to get *zshmux*
 
--Source *zshmux* in your .zshrc: `[[ -e <path-to-zshmux>/zshmux/zshmux.zsh ]] && . <path-to-zshmux>/zshmux/zshmux.zsh`
+-If you use Arch Linux:
+  - *zshmux* is available on the AUR
+  - Once you've installed zshmux add `[[ -d /usr/lib/zshmux ]] && source /usr/lib/zshmux/zshmux.zsh` to your .zshrc
 
+-Manual installation:
+  - Clone this repository: `git clone https://github.com/huboles/zshmux`
+  - Add: `[[ -d <path-to-zshmux>/zshmux ]] && source <path-to-zshmux>/zshmux/zshmux.zsh` to your .zshrc
+  
 -Open a new shell
 
-![zshmux](https://user-images.githubusercontent.com/80217378/192125380-151a4b09-f2ef-4fac-ae34-743cadcc1709.gif)
+
+![zshmux](https://user-images.githubusercontent.com/80217378/193707327-9d0b533e-d3e2-4c06-b2b7-4ea1ffcd5f07.gif)
