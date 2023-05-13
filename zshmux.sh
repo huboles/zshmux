@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # start tmux server if it's not already running
 [[ ! $(pgrep tmux) ]] && tmux start
